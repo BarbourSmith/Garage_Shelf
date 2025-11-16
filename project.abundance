@@ -340,11 +340,32 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "name": "Github Molecule",
-      "x": 0.5648854961832062,
-      "y": 0.831081081081081,
-      "uniqueID": "id-102",
-      "ioValues": [],
+      "name": "Linear-Pattern",
+      "x": 0.6132315521628499,
+      "y": 0.3108108108108108,
+      "uniqueID": "id-147",
+      "ioValues": [
+        {
+          "name": "Number",
+          "ioValue": 7,
+          "currentEquation": "7"
+        },
+        {
+          "name": "distX",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "distY",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "distZ",
+          "ioValue": 100,
+          "currentEquation": "100"
+        }
+      ],
       "topLevel": false,
       "allAtoms": [
         {
@@ -352,13 +373,426 @@
           "name": "Output",
           "x": 0.98,
           "y": 0.5,
-          "uniqueID": "id-104",
+          "uniqueID": "id-136",
           "ioValues": []
+        },
+        {
+          "atomType": "Rectangle",
+          "name": "Rectangle",
+          "x": 0.27976190476190477,
+          "y": 0.2116991643454039,
+          "uniqueID": "id-137",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 10
+            },
+            {
+              "name": "y length",
+              "ioValue": 10
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "name": "Number",
+          "x": 0.07755,
+          "y": 0.47,
+          "uniqueID": "id-138",
+          "ioValues": [],
+          "type": "number"
+        },
+        {
+          "atomType": "Input",
+          "name": "Geometry",
+          "x": 0.07755,
+          "y": 0.705,
+          "uniqueID": "id-139",
+          "ioValues": [],
+          "type": "geometry"
+        },
+        {
+          "atomType": "Code",
+          "name": "Code",
+          "x": 0.4901746724890829,
+          "y": 0.7515151515151516,
+          "uniqueID": "id-140",
+          "ioValues": [
+            {
+              "name": "Number",
+              "ioValue": 7
+            },
+            {
+              "name": "distX",
+              "ioValue": 0
+            },
+            {
+              "name": "distY",
+              "ioValue": 0
+            },
+            {
+              "name": "distZ",
+              "ioValue": 100
+            }
+          ],
+          "codeVersion": 1,
+          "code": "//Inputs:[Shape, Number, distX, distY, distZ];\n\n\nlet shapesArray = [];\nfor (let i = 0; i < Number; i++) {\n    let rotatedShape = await Move(Shape, distX * i, distY * i,distZ * i);\n    shapesArray.push(rotatedShape);\n}\n\nlet assembledShape = await Assembly(shapesArray)\n\nreturn assembledShape;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
+        },
+        {
+          "atomType": "Input",
+          "name": "distX",
+          "x": 0.07755,
+          "y": 0.94,
+          "uniqueID": "id-141",
+          "ioValues": [],
+          "type": "number"
+        },
+        {
+          "atomType": "Input",
+          "name": "distY",
+          "x": 0.07755,
+          "y": 0.95,
+          "uniqueID": "id-142",
+          "ioValues": [],
+          "type": "number"
+        },
+        {
+          "atomType": "Input",
+          "name": "distZ",
+          "x": 0.07755,
+          "y": 0.95,
+          "uniqueID": "id-143",
+          "ioValues": [],
+          "type": "number"
+        },
+        {
+          "atomType": "Readme",
+          "name": "README",
+          "x": 0.7794759825327511,
+          "y": 0.2787878787878788,
+          "uniqueID": "id-144",
+          "ioValues": [],
+          "readMeText": "Readme text here",
+          "global": true
+        },
+        {
+          "atomType": "Code",
+          "name": "Code",
+          "x": 0.6091703056768559,
+          "y": 0.28787878787878785,
+          "uniqueID": "id-145",
+          "ioValues": [
+            {
+              "name": "Number",
+              "ioValue": 5
+            },
+            {
+              "name": "distX",
+              "ioValue": 15
+            },
+            {
+              "name": "distY",
+              "ioValue": 2
+            },
+            {
+              "name": "distZ",
+              "ioValue": 0
+            }
+          ],
+          "codeVersion": 1,
+          "code": "//Inputs:[Shape, Number, distX, distY, distZ];\n\n\nlet shapesArray = [];\nfor (let i = 0; i < Number; i++) {\n    let rotatedShape = await Move(Shape, distX * i, distY * i,distZ * i);\n    shapesArray.push(rotatedShape);\n}\n\nlet assembledShape = await Assembly(shapesArray)\n\nreturn assembledShape;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
+        },
+        {
+          "atomType": "Extrude",
+          "name": "Extrude",
+          "x": 0.39847161572052403,
+          "y": 0.396969696969697,
+          "uniqueID": "id-146",
+          "ioValues": [
+            {
+              "name": "height",
+              "ioValue": 10
+            }
+          ]
         }
       ],
-      "allConnectors": [],
+      "allConnectors": [
+        {
+          "ap1Name": "geometry",
+          "ap2Name": "geometry",
+          "ap1ID": "id-137",
+          "ap2ID": "id-146"
+        },
+        {
+          "ap1Name": "number or geometry",
+          "ap2Name": "Number",
+          "ap1ID": "id-138",
+          "ap2ID": "id-140"
+        },
+        {
+          "ap1Name": "number or geometry",
+          "ap2Name": "Shape",
+          "ap1ID": "id-139",
+          "ap2ID": "id-140"
+        },
+        {
+          "ap1Name": "output",
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-140",
+          "ap2ID": "id-136"
+        },
+        {
+          "ap1Name": "number or geometry",
+          "ap2Name": "distX",
+          "ap1ID": "id-141",
+          "ap2ID": "id-140"
+        },
+        {
+          "ap1Name": "number or geometry",
+          "ap2Name": "distY",
+          "ap1ID": "id-142",
+          "ap2ID": "id-140"
+        },
+        {
+          "ap1Name": "number or geometry",
+          "ap2Name": "distZ",
+          "ap1ID": "id-143",
+          "ap2ID": "id-140"
+        },
+        {
+          "ap1Name": "output",
+          "ap2Name": "geometry",
+          "ap1ID": "id-145",
+          "ap2ID": "id-144"
+        },
+        {
+          "ap1Name": "geometry",
+          "ap2Name": "Shape",
+          "ap1ID": "id-146",
+          "ap2ID": "id-145"
+        }
+      ],
+      "parentRepo": {
+        "lastFoundGit": "2025-11-15T15:47:14.797Z",
+        "privateRepo": false,
+        "repoName": "Linear-Pattern",
+        "dateCreated": "2025-02-19T00:40:13Z",
+        "likes": 0,
+        "readMe": "https://raw.githubusercontent.com/alzatin/Linear-Pattern/master/README.md?sanitize=true",
+        "yyyy": 2025,
+        "topMoleculeID": 1739925613779,
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/alzatin/Linear-Pattern",
+        "topics": [
+          "abundance-tool"
+        ],
+        "parentRepo": "BarbourSmith/Linear-Pattern",
+        "forks": 0,
+        "dateModified": "739518",
+        "ranking": 14.1,
+        "searchField": "linear-pattern alzatin returns the input shape formed into an assembly translated n times abundance-tool",
+        "owner": "alzatin",
+        "description": "Returns the input shape formed into an assembly translated n times",
+        "contentURL": "https://raw.githubusercontent.com/alzatin/Linear-Pattern/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/alzatin/Linear-Pattern/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "MM",
       "fileTypeVersion": 1,
-      "compiledBom": {}
+      "compiledBom": []
+    },
+    {
+      "atomType": "CutLayout",
+      "name": "Cut Layout",
+      "x": 0.6412213740458015,
+      "y": 0.7668918918918919,
+      "uniqueID": "id-181",
+      "ioValues": [
+        {
+          "name": "Sheet Width",
+          "ioValue": 2438
+        },
+        {
+          "name": "Sheet Height",
+          "ioValue": 1219
+        },
+        {
+          "name": "Part Padding",
+          "ioValue": 10
+        }
+      ],
+      "placements": [
+        [
+          {
+            "id": 3,
+            "rotate": 180,
+            "translate": {
+              "x": 319.7,
+              "y": 62.350000000000044
+            }
+          },
+          {
+            "id": 0,
+            "rotate": 0,
+            "translate": {
+              "x": 319.7,
+              "y": 187.05000000000013
+            }
+          },
+          {
+            "id": 12,
+            "rotate": 0,
+            "translate": {
+              "x": 319.7,
+              "y": 311.75000000000017
+            }
+          },
+          {
+            "id": 2,
+            "rotate": 90,
+            "translate": {
+              "x": 62.349999975659905,
+              "y": 399.3000000000002
+            }
+          },
+          {
+            "id": 9,
+            "rotate": 120,
+            "translate": {
+              "x": 212.32363826395988,
+              "y": 680.6202718827585
+            }
+          },
+          {
+            "id": 18,
+            "rotate": 0,
+            "translate": {
+              "x": 319.7,
+              "y": 1049.4905437655168
+            }
+          },
+          {
+            "id": 15,
+            "rotate": 300,
+            "translate": {
+              "x": 356.3147941532493,
+              "y": 680.6202718827585
+            }
+          },
+          {
+            "id": 7,
+            "rotate": 150,
+            "translate": {
+              "x": 51.47579502149847,
+              "y": 704.3696317639599
+            }
+          },
+          {
+            "id": 6,
+            "rotate": 120,
+            "translate": {
+              "x": 527.8626026603803,
+              "y": 680.6202718827585
+            }
+          },
+          {
+            "id": 8,
+            "rotate": 30,
+            "translate": {
+              "x": 51.47579505416144,
+              "y": 574.2223553360402
+            }
+          },
+          {
+            "id": 4,
+            "rotate": 90,
+            "translate": {
+              "x": 62.349999975659905,
+              "y": 483.9487171170554
+            }
+          },
+          {
+            "id": 11,
+            "rotate": 240,
+            "translate": {
+              "x": 108.72131783604013,
+              "y": 628.4217887214984
+            }
+          },
+          {
+            "id": 13,
+            "rotate": 210,
+            "translate": {
+              "x": 147.0813144458386,
+              "y": 517.7370531639598
+            }
+          },
+          {
+            "id": 20,
+            "rotate": 330,
+            "translate": {
+              "x": 535.5994649179189,
+              "y": 922.066905546532
+            }
+          },
+          {
+            "id": 14,
+            "rotate": 240,
+            "translate": {
+              "x": 578.2957613360401,
+              "y": 820.9190637214984
+            }
+          },
+          {
+            "id": 17,
+            "rotate": 330,
+            "translate": {
+              "x": 589.8979181785015,
+              "y": 915.3145864360401
+            }
+          },
+          {
+            "id": 5,
+            "rotate": 150,
+            "translate": {
+              "x": 633.5455977214984,
+              "y": 890.1145864639599
+            }
+          },
+          {
+            "id": 10,
+            "rotate": 60,
+            "translate": {
+              "x": 628.6957627639599,
+              "y": 733.6237021785015
+            }
+          },
+          {
+            "id": 19,
+            "rotate": 330,
+            "translate": {
+              "x": 672.6912840785016,
+              "y": 809.3169068360401
+            }
+          },
+          {
+            "id": 1,
+            "rotate": 180,
+            "translate": {
+              "x": 664.6000000000001,
+              "y": 1018.39699177566
+            }
+          },
+          {
+            "id": 16,
+            "rotate": 30,
+            "translate": {
+              "x": 659.8605475541614,
+              "y": 627.0931241360402
+            }
+          }
+        ]
+      ]
     }
   ],
   "allConnectors": [
@@ -382,9 +816,9 @@
     },
     {
       "ap1Name": "geometry",
-      "ap2Name": "number or geometry",
+      "ap2Name": "Geometry",
       "ap1ID": "id-68",
-      "ap2ID": "id-44"
+      "ap2ID": "id-147"
     },
     {
       "ap1Name": "geometry or number",
@@ -409,6 +843,18 @@
       "ap2Name": "Shape 3",
       "ap1ID": "id-94",
       "ap2ID": "id-68"
+    },
+    {
+      "ap1Name": "geometry or number",
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-147",
+      "ap2ID": "id-44"
+    },
+    {
+      "ap1Name": "geometry or number",
+      "ap2Name": "geometry",
+      "ap1ID": "id-147",
+      "ap2ID": "id-181"
     }
   ],
   "unitsKey": "MM",

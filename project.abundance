@@ -572,8 +572,8 @@
         },
         {
           "atomType": "Gcode",
-          "x": 0.4715608465608465,
-          "y": 0.7158774373259054,
+          "x": 0.4788359788359788,
+          "y": 0.7214484679665739,
           "uniqueID": "id-281",
           "ioValues": [
             {
@@ -595,7 +595,7 @@
             },
             {
               "name": "Part Name",
-              "ioValue": "Shelf"
+              "ioValue": "Shelf 19mm"
             }
           ],
           "partName": "Layout",

@@ -7,7 +7,8 @@
   "ioValues": [
     {
       "name": "Wood Thickness",
-      "ioValue": 10
+      "ioValue": 19,
+      "currentEquation": "19"
     }
   ],
   "topLevel": true,
@@ -95,7 +96,7 @@
       "ioValues": [
         {
           "name": "Wood Thickness",
-          "ioValue": 10
+          "ioValue": 19
         }
       ],
       "topLevel": false,
@@ -127,8 +128,8 @@
             },
             {
               "name": "y length",
-              "ioValue": 114.3,
-              "currentEquation": "4.5*25.4"
+              "ioValue": 152.39999999999998,
+              "currentEquation": "6*25.4"
             }
           ]
         },
@@ -140,7 +141,7 @@
           "ioValues": [
             {
               "name": "height",
-              "ioValue": 10
+              "ioValue": 19
             }
           ]
         }
@@ -173,7 +174,7 @@
       "ioValues": [
         {
           "name": "Wood Thickness",
-          "ioValue": 10
+          "ioValue": 19
         }
       ],
       "topLevel": false,
@@ -200,7 +201,7 @@
           "ioValues": [
             {
               "name": "x length",
-              "ioValue": 10
+              "ioValue": 19
             },
             {
               "name": "y length",

@@ -123,8 +123,8 @@
           "ioValues": [
             {
               "name": "x length",
-              "ioValue": 629,
-              "currentEquation": "25*25.4-6"
+              "ioValue": 635,
+              "currentEquation": "25*25.4"
             },
             {
               "name": "y length",
@@ -620,6 +620,58 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Gcode",
+      "x": 0.5066137566137566,
+      "y": 0.2479108635097493,
+      "uniqueID": "id-293",
+      "ioValues": [
+        {
+          "name": "Tool Size",
+          "ioValue": 6.35
+        },
+        {
+          "name": "Passes",
+          "ioValue": 3,
+          "currentEquation": "3"
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Garage_Shelf 3 passes"
+        }
+      ],
+      "partName": "Garage_Shelf",
+      "sortDirection": "Left"
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.38822751322751325,
+      "y": 0.2646239554317549,
+      "uniqueID": "id-301",
+      "ioValues": [
+        {
+          "name": "x-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 90,
+          "currentEquation": "90"
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -660,6 +712,11 @@
     },
     {
       "ap2Name": "geometry",
+      "ap1ID": "id-53",
+      "ap2ID": "id-301"
+    },
+    {
+      "ap2Name": "geometry",
       "ap1ID": "id-72",
       "ap2ID": "id-88"
     },
@@ -672,6 +729,11 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-147",
       "ap2ID": "id-44"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-301",
+      "ap2ID": "id-293"
     }
   ],
   "unitsKey": "MM",

@@ -509,11 +509,13 @@
           "ioValues": [
             {
               "name": "Sheet Width",
-              "ioValue": 2438
+              "ioValue": 635,
+              "currentEquation": "25*25.4"
             },
             {
               "name": "Sheet Height",
-              "ioValue": 1219
+              "ioValue": 609.5999999999999,
+              "currentEquation": "24*25.4"
             },
             {
               "name": "Part Padding",

@@ -502,8 +502,8 @@
         },
         {
           "atomType": "CutLayout",
-          "x": 0.27843915343915343,
-          "y": 0.5598885793871866,
+          "x": 0.2830687830687831,
+          "y": 0.5543175487465182,
           "uniqueID": "id-271",
           "name": "Cut Layout",
           "ioValues": [
@@ -526,26 +526,26 @@
             [
               {
                 "id": 0,
-                "rotate": 30,
+                "rotate": 90,
                 "translate": {
-                  "x": 306.5202718827583,
-                  "y": 212.32363821898483
+                  "x": 0,
+                  "y": 0
                 }
               },
               {
                 "id": 1,
-                "rotate": 180,
+                "rotate": 90,
                 "translate": {
-                  "x": 25.199999999999992,
-                  "y": 197.03944497565988
+                  "x": 0,
+                  "y": -345
                 }
               },
               {
                 "id": 2,
-                "rotate": 0,
+                "rotate": 90,
                 "translate": {
-                  "x": 25.2,
-                  "y": 321.7394449756599
+                  "x": 0,
+                  "y": -400
                 }
               }
             ]
@@ -553,8 +553,8 @@
         },
         {
           "atomType": "Rectangle",
-          "x": 0.546957671957672,
-          "y": 0.6100278551532033,
+          "x": 0.46891534391534395,
+          "y": 0.31197771587743733,
           "uniqueID": "id-277",
           "ioValues": [
             {
@@ -568,6 +568,37 @@
               "currentEquation": "24*25.4"
             }
           ]
+        },
+        {
+          "atomType": "Gcode",
+          "x": 0.4715608465608465,
+          "y": 0.7158774373259054,
+          "uniqueID": "id-281",
+          "ioValues": [
+            {
+              "name": "Tool Size",
+              "ioValue": 6.35
+            },
+            {
+              "name": "Passes",
+              "ioValue": 2,
+              "currentEquation": "2"
+            },
+            {
+              "name": "Speed",
+              "ioValue": 1500
+            },
+            {
+              "name": "Cut Through",
+              "ioValue": 0
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "Shelf"
+            }
+          ],
+          "partName": "Layout",
+          "sortDirection": "Left"
         }
       ],
       "allConnectors": [
@@ -575,6 +606,11 @@
           "ap2Name": "geometry",
           "ap1ID": "id-268",
           "ap2ID": "id-271"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-271",
+          "ap2ID": "id-281"
         },
         {
           "ap2Name": "number or geometry",

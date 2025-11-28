@@ -774,8 +774,8 @@
           "ioValues": [
             {
               "name": "Number",
-              "ioValue": 6,
-              "currentEquation": "3*2"
+              "ioValue": 8,
+              "currentEquation": "4*2"
             },
             {
               "name": "distX",
@@ -840,7 +840,7 @@
               "ioValues": [
                 {
                   "name": "Number",
-                  "ioValue": 6
+                  "ioValue": 8
                 },
                 {
                   "name": "distX",
@@ -1007,8 +1007,8 @@
         },
         {
           "atomType": "Gcode",
-          "x": 0.656084656084656,
-          "y": 0.36490250696378834,
+          "x": 0.6574074074074074,
+          "y": 0.3593314763231198,
           "uniqueID": "id-384",
           "ioValues": [
             {
@@ -1030,7 +1030,7 @@
             },
             {
               "name": "Part Name",
-              "ioValue": "Layout Supports"
+              "ioValue": "Layout Supports More"
             }
           ],
           "partName": "Layout Supports",

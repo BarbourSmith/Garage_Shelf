@@ -599,7 +599,7 @@
             }
           ],
           "partName": "Layout",
-          "sortDirection": "Left"
+          "sortDirection": "Top"
         }
       ],
       "allConnectors": [
